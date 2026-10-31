@@ -1,0 +1,157 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f3ff;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    background-color: white;
+    width: 450px;
+    margin: 150px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h2 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #111827;
+}
+
+/* Input Area */
+.input-area {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e0e5ef;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3b82f6;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+#addBtn {
+    background-color: #3b82f6;
+    color: white;
+}
+
+#addBtn:hover {
+    background-color: #2563eb;
+}
+
+/* Filters */
+.filter-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.filter-area p {
+    font-size: 11px;
+    color: #777;
+}
+
+.filter {
+    background-color: white;
+    font-size: 11px;
+    color: #444;
+}
+
+.filter.active {
+    background-color: #e0ecff;
+    color: #2563eb;
+}
+
+/* Tasks */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 8px;
+    border-bottom: 1px solid #eee;
+}
+
+li input {
+    flex: none;
+}
+
+li span {
+    flex: 1;
+    font-size: 14px;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.deleteBtn {
+    background: transparent;
+    color: #999;
+    font-size: 16px;
+}
+
+.deleteBtn:hover {
+    color: red;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 11px;
+    color: #777;
+}
+
+.footer button {
+    background-color: #f3f4f6;
+    border: 1px solid #ccc;
+    font-size: 10px;
+    padding: 5px 7px;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        margin: 80px auto;
+    }
+
+    .filter-area {
+        flex-wrap: wrap;
+    }
+}
